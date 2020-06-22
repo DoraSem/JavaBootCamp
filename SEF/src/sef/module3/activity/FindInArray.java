@@ -27,13 +27,15 @@ public class FindInArray {
 		}
 		System.out.println("Smallest in array is "+result);
 		
-		result = nums[0];
+		int result1 = nums[0];
 		
 		// Find largest in an array
 		for (int i = 1; i < nums.length; i++) {
-			// complete the code
+			if (nums[i] > result1) {
+				result1 = nums[i];
 		}
-		System.out.println("Largest in array is "+result);
+		}
+		System.out.println("Largest in array is "+result1);
 
 
 	}
