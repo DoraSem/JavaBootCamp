@@ -8,6 +8,7 @@ public class StrategySample {
 		
 		Strategy s1 = new StrategyImplOne();
 		Strategy s2 = new StrategyImplTwo();
+		Strategy s3 = new StrategyImplThree();
 		
 		General g = new General("John Doe");
 		
@@ -17,6 +18,7 @@ public class StrategySample {
 		g.executeStrategy();
 		g.setStragey(s2);
 		g.executeStrategy();
-		
+		g.setStragey(s3);
+		g.executeStrategy();
 	}
 }
