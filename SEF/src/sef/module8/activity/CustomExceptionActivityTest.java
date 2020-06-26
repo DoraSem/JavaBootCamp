@@ -7,9 +7,17 @@ public class CustomExceptionActivityTest {
 
 	//1 - Type main method and call validateUser() from it.
 	//Call this method with different names to test it 
+public static void main(String arg[]) {
+		validateUser("John");
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
 
-
-void validateUser(String name)
+public static void validateUser(String name)
 {
 	//array of names
 String []validUsers={"John","Mike","Shanti","Stacie"};
