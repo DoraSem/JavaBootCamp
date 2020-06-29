@@ -64,9 +64,19 @@ public class Calculator {
 	public int divide(int x, int y) {
 		int divValue = 0;
 		if (x == 0 || y == 0) {
-			divValue = 0;
-		} else {
+			if (x == 0 && y == 0) {
+				System.out.println("Not possible to devide by 0");
+			}
+			if (x == 0) {
+				divValue = x / y;
+			} else {
+				divValue = y / x;
+			}
+		} if (x>y) {
 			divValue = x / y;
+		} else {
+			divValue = y / x;
+	
 		}
 		return divValue;
 

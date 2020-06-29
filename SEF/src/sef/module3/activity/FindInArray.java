@@ -25,7 +25,7 @@ public class FindInArray {
 				result = nums[i];
 			}
 		}
-		System.out.println("Smallest in array is "+result);
+		System.out.println("The smallest number in the array is "+result);
 		
 		int result1 = nums[0];
 		
@@ -35,7 +35,7 @@ public class FindInArray {
 				result1 = nums[i];
 		}
 		}
-		System.out.println("Largest in array is "+result1);
+		System.out.println("The largest number in the array is "+result1);
 
 
 	}
